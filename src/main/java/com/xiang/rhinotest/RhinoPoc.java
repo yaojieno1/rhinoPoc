@@ -17,8 +17,8 @@ public class RhinoPoc
 
     private static void poc() throws Exception {
     	File serFile = new File("ser.txt");
-    	//serialize(serFile);
-    	deserialize(serFile);
+    	serialize(serFile);
+    	//deserialize(serFile);
     }
     
     private static void serialize(File file) throws Exception {
