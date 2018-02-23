@@ -11,14 +11,16 @@ import com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl;
 
 public class RhinoPoc 
 {
+	private final static String FILE_NAME = "ser.txt";
+	
     public static void main( String[] args ) throws Exception {
         poc();
     }
 
     private static void poc() throws Exception {
-    	File serFile = new File("ser.txt");
+    	File serFile = new File(FILE_NAME);
     	serialize(serFile);
-    	//deserialize(serFile);
+    	deserialize(serFile);
     }
     
     private static void serialize(File file) throws Exception {
